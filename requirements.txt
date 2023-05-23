@@ -1,6 +1,0 @@
-pandas
-tkinter
-docxtpl
-openpyxl
-xvfbwrapper
-matplotlib
