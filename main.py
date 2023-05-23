@@ -5,6 +5,8 @@ import sqlite3
 from docxtpl import DocxTemplate
 import datetime
 import openpyxl
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 from openpyxl.utils.dataframe import dataframe_to_rows
