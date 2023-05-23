@@ -37,7 +37,9 @@ def clear_item():
     entry_description.delete(0, tkinter.END)
     entry_total_amount.delete(0, tkinter.END)
     
-    
+@app.route('/')
+def index():
+    return render_template('index.html')
 #Function to add items to the treeview of the invoice
 invoice_list = []
 def add_item():
@@ -228,11 +230,6 @@ button_calculate_income.grid(row=9, column=0, columnspan=3, sticky="news", padx=
 frame.mainloop()
 
 conn.close()
-
-# Route for the index page
-@app.route('/')
-def index():
-    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run()
