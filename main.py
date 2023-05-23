@@ -13,7 +13,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-conn = sqlite3.connect("C:/Users/camil/database/invoices.db")
+conn = sqlite3.connect("./invoices.db")
 cursor = conn.cursor()
 
 # Create the invoices table if it doesn't exist
