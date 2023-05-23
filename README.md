@@ -16,7 +16,7 @@ This is a simple GUI-based invoicing application written in Python. It allows yo
    - sqlite3: Included with Python (no separate installation required)
    - docxtpl: `pip install docxtpl`
    - openpyxl: `pip install openpyxl`
-
+   -flask: 'pip install flask'
 2. Download the source code or clone the repository.
 
 3. Run the `invoicing_application.py` script.

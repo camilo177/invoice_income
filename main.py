@@ -9,7 +9,9 @@ import matplotlib.pyplot as plt
 
 from openpyxl.utils.dataframe import dataframe_to_rows
 from openpyxl.drawing.image import Image
+from flask import Flask, render_template, request
 
+app = Flask(__name__)
 
 conn = sqlite3.connect("C:/Users/camil/database/invoices.db")
 cursor = conn.cursor()
@@ -226,3 +228,11 @@ button_calculate_income.grid(row=9, column=0, columnspan=3, sticky="news", padx=
 frame.mainloop()
 
 conn.close()
+
+# Route for the index page
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run()
